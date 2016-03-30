@@ -1,0 +1,15 @@
+app/code/local/Stuntcoders/*                                                                          app/code/local/Stuntcoders/
+
+app/design/adminhtml/default/default/layout/stuntcoders/damagecontroll.xml                            app/design/adminhtml/default/default/layout/stuntcoders/damagecontroll.xml
+app/design/adminhtml/default/default/layout/template/stuntcoders/*                                    app/design/adminhtml/default/default/layout/template/stuntcoders/
+
+app/design/adminhtml/frontend/base/default/layout/stuntcoders/damagecontroll.xml                      app/design/adminhtml/frontend/base/default/layout/stuntcoders/damagecontroll.xml
+app/design/adminhtml/frontend/base/default/layout/template/stuntcoders/damagecontroll/review.phtml    app/design/adminhtml/frontend/base/default/layout/template/stuntcoders/damagecontroll/review.phtml
+
+app/etc/modules/Stuntcoders_Damagecontroll.xml                                                        app/etc/modules/Stuntcoders_Damagecontroll.xml
+
+app/locale/en_US/template/email/damagecontroll/*                                                      app/locale/en_US/template/email/damagecontroll/*
+
+js/stuntcoders/*                                                                                      js/stuntcoders/
+
+skin/base/default/stuntcoders/damagecontroll/*                                                        skin/base/default/stuntcoders/damagecontroll/*
