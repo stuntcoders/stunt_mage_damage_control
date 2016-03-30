@@ -1,0 +1,198 @@
+<config>
+    <tabs>
+        <stuntcoders translate="label" module="stuntcoders_damagecontroll">
+            <label>stuntcoders</label>
+            <sort_order>99999</sort_order>
+        </stuntcoders>
+    </tabs>
+    <sections>
+        <stuntcoders_damagecontroll translate="label" module="stuntcoders_damagecontroll">
+            <label>Damage Controll</label>
+            <tab>stuntcoders</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general_options translate="label" module="stuntcoders_damagecontroll">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <send_after translate="label comment">
+                            <label>Send after</label>
+                            <comment>How many days after creating order, review mail should be sent</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </send_after>
+                        <ignore_old_orders translate="label comment">
+                            <label>Ignore old orders</label>
+                            <comment>Do not send review email for orders older than x days</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ignore_old_orders>
+                        <order_stages translate="label comment">
+                            <label>Order statuses</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>stuntcoders_damagecontroll/system_config_backend_orderstatus</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_stages>
+                    </fields>
+                </general_options>
+                <rating_options translate="label" module="stuntcoders_damagecontroll">
+                    <label>Rating system </label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <marks translate="label">
+                            <label>Border mark</label>
+                            <comment>Under chosen mark customer will be redirected to leave complaint</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>stuntcoders_damagecontroll/system_config_backend_marks</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </marks>
+                    </fields>
+                </rating_options>
+                <schedule_options translate="label" module="stuntcoders_damagecontroll">
+                    <label>Damage controll run options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <frequency translate="label">
+                            <label>Frequency</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_cron_frequency</source_model>
+                            <backend_model>stuntcoders_damagecontroll/system_config_backend_cron</backend_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </frequency>
+                        <time translate="label">
+                            <label>Start time</label>
+                            <frontend_type>time</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </time>
+                        <email_identity translate="label">
+                            <label>Email sender</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_identity</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </email_identity>
+                        <email_template translate="label">
+                            <label>Email template</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </email_template>
+                    </fields>
+                </schedule_options>
+                <notification_options translate="label" module="stuntcoders_damagecontroll">
+                    <label>Damage controll email notification options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <email_notification_sender translate="label">
+                            <label>Email sender</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_identity</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </email_notification_sender>
+                        <email_notification_recipient translate="label comment">
+                            <label>Email recipient</label>
+                            <comment>Comma separated</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </email_notification_recipient>
+                        <email_notification_template translate="label">
+                            <label>Email template</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_template</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </email_notification_template>
+                    </fields>
+                </notification_options>
+                <social_media_options translate="label" module="stuntcoders_damagecontroll">
+                    <label>Social media options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <social_media_message translate="label comment">
+                            <label>Message for social media</label>
+                            <comment>Example: Share your experience on social media. </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </social_media_message>
+                        <facebook_link translate="label comment">
+                            <label>Link to Facebook page</label>
+                            <comment>Example: http://www.facebook.com/stuntcoders</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_link>
+                        <google_plus_link translate="label comment">
+                            <label>Link to Google+</label>
+                            <comment>Example: http://plus.google.com/+Stuntcoders</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </google_plus_link>
+                    </fields>
+                </social_media_options>
+            </groups>
+        </stuntcoders_damagecontroll>
+    </sections>
+</config>
