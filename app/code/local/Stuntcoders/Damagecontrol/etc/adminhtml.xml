@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <customer>
+            <children>
+                <stuntcoders_damagecontrol translate="title" module="stuntcoders_damagecontrol">
+                    <title>Damage control</title>
+                    <action>adminhtml/damagecontrol/index</action>
+                    <sort_order>40</sort_order>
+                </stuntcoders_damagecontrol>
+            </children>
+        </customer>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <customer>
+                        <children>
+                            <stuntcoders_damagecontrol translate="title" module="stuntcoders_damagecontrol">
+                                <title>Damage control</title>
+                            </stuntcoders_damagecontrol>
+                        </children>
+                    </customer>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <stuntcoders_damagecontrol>
+                                        <title>Damage control</title>
+                                    </stuntcoders_damagecontrol>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

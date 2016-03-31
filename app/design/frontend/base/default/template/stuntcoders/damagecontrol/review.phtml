@@ -1,0 +1,59 @@
+<div class="box simple_contact">
+    <h1><?php echo $this->__('Please rate your order'); ?></h1>
+    <div class="star-container"></div>
+    <div class="good-review mfp-hide">
+        <h2 class="popup-title">
+            <?php echo Mage::helper('stuntcoders_damagecontrol')->getSocialMediaMessage(); ?>
+        </h2>
+        <div class="social-media-links">
+            <?php if (Mage::helper('stuntcoders_damagecontrol')->getFacebookLink()): ?>
+                <a href="<?php echo Mage::helper('stuntcoders_damagecontrol')->getFacebookLink(); ?>"><i class="fa fa-facebook"></i></a>
+            <?php endif; ?>
+
+            <?php if (Mage::helper('stuntcoders_damagecontrol')->getFacebookLink()): ?>
+                <a href="<?php echo Mage::helper('stuntcoders_damagecontrol')->getGooglePlusLink(); ?>"><i class="fa fa-google-plus"></i></a>
+            <?php endif; ?>
+        </div>
+    </div>
+    <div class="bad-review mfp-hide">
+        <h2 class="popup-title">
+            <?php echo $this->__('Please tell us what was wrong with order:'); ?>
+        </h2>
+        <form method="post" id="set-comment-form" action="<?php echo Mage::getUrl('order_review/index/setcomment', array('code' => $this->getDamageControl()->getCode())); ?>">
+            <?php echo $this->getBlockHtml('formkey'); ?>
+            <textarea form="set-comment-form" name="comment" id="comment"></textarea>
+            <div class="popup-buttons">
+                <button type="submit" class="button"><?php echo $this->__('Submit'); ?></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    var code = '<?php echo $this->getDamageControl()->getCode(); ?>';
+    var urlSetMark = '<?php echo Mage::getUrl('order_review/index/setmark'); ?>';
+    var urlSetComment = '<?php echo Mage::getUrl('order_review/index/setcomment'); ?>';
+    var minMark = <?php echo Mage::helper('stuntcoders_damagecontrol')->getMinimalPositiveMark(); ?>;
+
+    jQuery('.star-container').raty({ starType: 'i' }).click(function(){
+        var mark = jQuery('.star-container').raty('score');
+        var popup = mark > minMark ? '.good-review' : '.bad-review';
+
+         jQuery.post(urlSetMark, {
+             mark: mark,
+             form_key:  "<?php echo Mage::getSingleton('core/session')->getFormKey(); ?>",
+             code: code
+
+         }, function (data) {
+             data = JSON.parse(data);
+             if(data.success){
+                 jQuery.magnificPopup.open({
+                     items: {
+                         src: popup,
+                         type: 'inline'
+                     }
+                 });
+             }
+         });
+    });
+</script>

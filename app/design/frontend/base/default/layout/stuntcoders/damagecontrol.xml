@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+    <stuntcoders_damagecontrol_index_index>
+        <reference name="head">
+            <action method="addJs"><script>stuntcoders/damagecontrol/jquery.raty.min.js</script></action>
+            <action method="addJs"><script>stuntcoders/damagecontrol/magnific-popup.min.js</script></action>
+            <action method="addCss"><script>stuntcoders/damagecontrol/css/jquery.raty.min.css</script></action>
+            <action method="addCss"><script>stuntcoders/damagecontrol/css/magnific-popup.min.css</script></action>
+            <action method="addCss"><script>stuntcoders/damagecontrol/css/damagecontrol.min.css</script></action>
+        </reference>
+        <reference name="content">
+            <block type="stuntcoders_damagecontrol/review" template="stuntcoders/damagecontrol/review.phtml"/>
+        </reference>
+    </stuntcoders_damagecontrol_index_index>
+</layout>

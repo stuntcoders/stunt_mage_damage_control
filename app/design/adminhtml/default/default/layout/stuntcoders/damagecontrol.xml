@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_damagecontrol_index>
+        <reference name="content">
+            <block type="stuntcoders_damagecontrol/index" name="stuntcoders.damagecontrol.index" template="stuntcoders/damagecontrol/index.phtml">
+                <block type="stuntcoders_damagecontrol/index_grid" name="stuntcoders.damagecontrol.grid" />
+            </block>
+        </reference>
+    </adminhtml_damagecontrol_index>
+    <adminhtml_damagecontrol_view>
+        <reference name="content">
+            <block type="stuntcoders_damagecontrol/view" name="stuntcoders.damagecontrol.view" template="stuntcoders/damagecontrol/view.phtml"/>
+        </reference>
+    </adminhtml_damagecontrol_view>
+</layout>

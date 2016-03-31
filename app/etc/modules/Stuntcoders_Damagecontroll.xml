@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<config>
-    <modules>
-        <Stuntcoders_Damagecontroll>
-            <active>true</active>
-            <codePool>local</codePool>
-        </Stuntcoders_Damagecontroll>
-    </modules>
-</config>
