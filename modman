@@ -1,14 +1,14 @@
-app/code/local/Stuntcoders/*                                                                          app/code/local/Stuntcoders/
+app/code/local/Stuntcoders/*                                                                 app/code/local/Stuntcoders/
 
-app/design/adminhtml/default/default/layout/stuntcoders/damagecontroll.xml                            app/design/adminhtml/default/default/layout/stuntcoders/damagecontroll.xml
-app/design/adminhtml/default/default/template/stuntcoders/*                                           app/design/adminhtml/default/default/template/stuntcoders/
-app/design/frontend/base/default/layout/stuntcoders/damagecontroll.xml                                app/design/frontend/base/default/layout/stuntcoders/damagecontroll.xml
-app/design/frontend/base/default/template/stuntcoders/damagecontroll/review.phtml                     app/design/frontend/base/default/template/stuntcoders/damagecontroll/review.phtml
+app/design/adminhtml/default/default/layout/stuntcoders/damagecontrol.xml                    app/design/adminhtml/default/default/layout/stuntcoders/damagecontrol.xml
+app/design/adminhtml/default/default/template/stuntcoders/*                                  app/design/adminhtml/default/default/template/stuntcoders/
+app/design/frontend/base/default/layout/stuntcoders/damagecontrol.xml                        app/design/frontend/base/default/layout/stuntcoders/damagecontrol.xml
+app/design/frontend/base/default/template/stuntcoders/damagecontrol/review.phtml             app/design/frontend/base/default/template/stuntcoders/damagecontrol/review.phtml
 
-app/etc/modules/Stuntcoders_Damagecontroll.xml                                                        app/etc/modules/Stuntcoders_Damagecontroll.xml
+app/etc/modules/Stuntcoders_Damagecontrol.xml                                                app/etc/modules/Stuntcoders_Damagecontrol.xml
 
-app/locale/en_US/template/email/damagecontroll/*                                                      app/locale/en_US/template/email/damagecontroll/
+app/locale/en_US/template/email/damagecontrol/*                                              app/locale/en_US/template/email/damagecontrol/
 
-js/stuntcoders/*                                                                                      js/stuntcoders/
+js/stuntcoders/*                                                                             js/stuntcoders/
 
-skin/frontend/base/default/stuntcoders/damagecontroll/*                                               skin/frontend/base/default/stuntcoders/damagecontroll/
+skin/frontend/base/default/stuntcoders/damagecontrol/*                                       skin/frontend/base/default/stuntcoders/damagecontrol/
