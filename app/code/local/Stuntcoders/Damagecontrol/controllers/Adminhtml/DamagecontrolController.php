@@ -4,7 +4,6 @@ class Stuntcoders_Damagecontrol_Adminhtml_DamagecontrolController extends Mage_A
 {
     public function indexAction()
     {
-        Mage::getModel('stuntcoders_damagecontrol/observer')->sendDamageControlEmail();
         $this->loadLayout();
         $this->renderLayout();
     }
