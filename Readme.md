@@ -16,26 +16,25 @@ Here is the overview of functionalities provided by this extension
 
 First thing to do is to create new Magento mail templates for two different emails. First mail is for customers and has link leading to review page on website, while other has information about negative review and will be sent when customer finish with survey (as mention before good review will offer links for social media).
 
-![notification]https://s3-eu-west-1.amazonaws.com/stcd/stunt_mage_damage_control/order-review-email.png )
+![notification](https://s3-eu-west-1.amazonaws.com/stcd/stunt_mage_damage_control/order-review-email.png)
 
 Both mail templates could be found in Email Templates, Damage Control Review and Damage Control Review Notification.
 Next step is setting Damage Control configuration in System Configuration from left menu Stuntcoders. All details are described in the section "Setting up basic and required options".
 
 Link from first mail leads to page where is customer supposed to rate order. After this popup shows with different actions for good and bad reviewing.
 
-![frontend]https://s3-eu-west-1.amazonaws.com/stcd/stunt_mage_damage_control/order-review-frontend.png )
+![frontend](https://s3-eu-west-1.amazonaws.com/stcd/stunt_mage_damage_control/order-review-frontend.png)
 
 Unsatisfied customer gets a chance, in simple popup window, to explain what is wrong with order. If order has reviewed with good rate in pop up window is call to action for customer to leave positive review on social media, Facebook and/or Google+.
 
 After setting options, email with review request is going to be sent to all orders from selected range accordingly to defined cron option.
 Since mail sending, from main menu Customers => Damage Control, all information about sent review mails and their statuses are there.
 
-![reviews]https://s3-eu-west-1.amazonaws.com/stcd/stunt_mage_damage_control/order-reviews.png )
+![reviews](https://s3-eu-west-1.amazonaws.com/stcd/stunt_mage_damage_control/order-reviews.png)
 
 Clicking on desired line opens more detailed information on another page for better tracking customer behavior (mark, date of sending, reading mail and reviewing order, number of page visiting before rating). With every step cron or customer take, informations about review are updated.
 
-![review]https://s3-eu-west-1.amazonaws.com/stcd/stunt_mage_damage_control/order-review.png )
-
+![review](https://s3-eu-west-1.amazonaws.com/stcd/stunt_mage_damage_control/order-review.png)
 
 ### Setting up basic and required options
 
